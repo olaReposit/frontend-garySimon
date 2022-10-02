@@ -3,10 +3,9 @@ const nav = document.querySelector('nav')
 const mobileBtnExit = document.getElementById('mobile-exit-cta');
 
 mobileBtn.addEventListener('click', ()=>{
-    nav.classList.add('menu-btn');
+  nav.classList.add('menu-btn');
 });
 
 mobileBtnExit.addEventListener('click', ()=>{
     nav.classList.remove('menu-btn');
 });
-
