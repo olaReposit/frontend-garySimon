@@ -5,257 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend By Gary Simon</title>
-    <style>
-        :root{
-    --primary-color: #007af3;
-}
-
-
-body{
-    font-family: 'poppins';
-    margin: 0;
-    background-color: #f2f2f2;
-}
-
-.navbar{
-    padding: 1em;
-    background-color: white;
-}
-
-.navbar .logo{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.navbar .logo span{
-    color: var(--primary-color);
-}
-
-
-nav {
-    display: none;
-}
-
-.navbar .container{
-    display: flex;
-    place-content: space-between;
-}
-
-
-.navbar .mobile-menu{
-    width: 30px;
-    cursor: pointer;
-}
-
-a {
-    color: #444444;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    padding: 5em 2em;
-}
-
-.hero {
-    text-align: center;
-}
-
-.hero .left-col .subhead{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: gray;
-    letter-spacing: .3em;
-}
-
-.hero .left-col h1{
-    font-size: 2.5em;
-    line-height: 1.3em;
-    margin-top: .2em;
-}
-
-.hero .left-col .primary-cta{
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: .6em 1.3em;
-    font-size: 1.4em;
-    border-radius: 5em;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.hero .left-col .secondary-cta{
-    display: block;
-    margin-top: 1em;
-}
-
-.hero .left-col .secondary-cta img{
-    margin-right: .8em;
-    height: 1.5em;
-
-}
-
-.right-col  .hero-img{
-    width: 70%;
-    margin-top: 3em;
-}
-
-section.features-section{
-    background-color: #20272e;
-    color: white;
-}
-
-ul.features-list{
-    margin: 0;
-    padding-left: .1em;
-}
-
-
-ul.features-list li{
-    font-size: 1.1em;
-    margin-bottom: 1em;
-    margin-left: 2em;
-    position: relative; /* to mmake the child elements positioning related to it */
-
-}
-
-ul.features-list li::before{
-    content: '';
-    position: absolute;
-    left: -2em;
-    width: 20px;
-    height: 20px;
-    background: url('https://www.dropbox.com/s/te7wvr9e52a2e9d/checkmark.png?dl=0');
-    background-size: contain;
-    margin-right: .5em;
-}
-
-.features-section img{
-    display: none;
-}
-
-section.testimonial-section{
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.testimonial-section li img{
-    width: 5em;
-    border: 5px solid  #006bd6;
-    border-radius: 50%;
-    margin-top: -4em;
-}
-
-.testimonial-section li{
-    background-color: #006bd6;
-    text-align: center;
-    padding: 2em 1em;
-    width: 80%;
-    margin: 0 auto 5em auto;
-    border-radius: 1em;
-}
-
-.contact-section h2{
-    font-size: 2em;
-}
-
-label{
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: .5em;
-}
-
-input, textarea{
-    width: 100%;
-    padding: .8em;
-    margin-bottom: 1em;
-    border-radius: .8em;
-    border: 1px solid gray;
-    box-sizing: border-box;
-}
-
-input:hover, textarea:hover{
-    border: 1px solid var(--primary-color);
-}
-
-input:active, textarea:active{
-    border: 1px solid var(--primary-color);
-}
-
-input:focus, textarea:active{
-    border: 1px solid var(--primary-color);
-}
-
-input[type="submit"]{
-    border: none;
-    background-color: var(--primary-color);
-    font-weight: bold;
-    color: white;
-    font-size: 1.3em;
-    border-radius: 5em;
-    margin-bottom: 5em;
-    cursor: pointer;
-    width: unset;
-    padding: .8em 2em;
-
-}
-
-iframe{
-    width: 100%;
-    height: 300px;
-}
-
-img.mobile-exit{
-    padding: 0;
-    margin: 0;
-}
-
-nav.menu-btn{
-    display: block;
-}
-
-nav{
-    position: fixed;
-    z-index: 999;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    background-color: #20272e;
-    width: 60%;
-    padding: 1em;
-    box-sizing: border-box;
-}
-
-nav ul.primary-nav{
-    margin-top: 5em;
-}
-
-nav ul li a{
-    color: white;
-    padding: .5em;
-    text-decoration: none;
-    font-size: 1.3em;
-    text-align: right;
-    display: block;
-}
-
-nav ul li a:hover{
-    font-weight: bold;
-}
-
-.mobile-exit{
-    float: right;
-    margin: .5em;
-    cursor: pointer;
-}
-    </style>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="navbar">
@@ -265,7 +15,7 @@ nav ul li a:hover{
         <img
           id="mobile-cta"
           class="mobile-menu"
-          src="https://www.dropbox.com/s/olzwhtzledz71vy/open-menu.svg?dl=0"
+          src="icon/open-menu.svg"
           alt="open menu"
         />
 
@@ -273,7 +23,7 @@ nav ul li a:hover{
           <img
             id="mobile-exit-cta"
             class="mobile-exit"
-            src="https://www.dropbox.com/s/fa0eqcxjiuxgkhh/exit-menu.svg?dl=0"
+            src="icon/exit-menu.svg"
             alt="open menu"
           />
 
@@ -300,7 +50,7 @@ nav ul li a:hover{
           <div class="hero-cta">
             <a href="#" class="primary-cta">Try For Free</a>
             <a href="#" class="secondary-cta">
-              <img src="https://www.dropbox.com/s/vdmxmlq2nthf3so/play.svg?dl=0" alt="Play Video" />Watch a video
+              <img src="icon/play.svg" alt="Play Video" />Watch a video
             </a>
           </div>
         </div>
@@ -308,7 +58,7 @@ nav ul li a:hover{
         <div class="right-col">
           <img
             class="hero-img"
-            src="https://www.dropbox.com/s/nm5zmos2hgz39wk/task-illustration.svg?dl=0"
+            src="images/task-illustration.svg"
             alt="Task Illustration"
           />
         </div>
@@ -326,7 +76,7 @@ nav ul li a:hover{
           <li>Other amazing features</li>
         </ul>
 
-        <img src="https://www.dropbox.com/s/wjfrvs40y0ct705/young-man.jpg?dl=0" alt="Young Man" />
+        <img src="images/young-man.jpg" alt="Young Man" />
       </div>
     </section>
 
@@ -334,7 +84,7 @@ nav ul li a:hover{
       <div class="container">
         <ul>
           <li>
-            <img src="https://www.dropbox.com/s/063inlwzt4oupmr/person.jpg?dl=0" alt="person" />
+            <img src="images/person.jpg" alt="person" />
 
             <blockquote>
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas
@@ -344,7 +94,7 @@ nav ul li a:hover{
             <cite>- Melissa Doe</cite>
           </li>
           <li>
-            <img src="https://www.dropbox.com/s/063inlwzt4oupmr/person.jpg?dl=0" alt="person" />
+            <img src="images/person.jpg" alt="person" />
 
             <blockquote>
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas
@@ -354,7 +104,7 @@ nav ul li a:hover{
             <cite>- Mary Penny</cite>
           </li>
           <li>
-            <img src="https://www.dropbox.com/s/063inlwzt4oupmr/person.jpg?dl=0" alt="person" />
+            <img src="images/person.jpg" alt="person" />
 
             <blockquote>
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas
@@ -407,20 +157,6 @@ nav ul li a:hover{
       </div>
     </section>
 
-    <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-nav = document.querySelector('nav')
-mobileBtnExit = document.getElementById('mobile-exit-cta');
-
-mobileBtn.addEventListener('click', ()=>{
-    nav.classList.add('menu-btn');
-});
-
-mobileBtnExit.addEventListener('click', ()=>{
-    nav.classList.remove('menu-btn');
-});
-
-
-    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
