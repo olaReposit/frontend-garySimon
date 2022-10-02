@@ -1,0 +1,249 @@
+:root{
+    --primary-color: #007af3;
+}
+
+
+body{
+    font-family: 'poppins';
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.navbar{
+    padding: 1em;
+    background-color: white;
+}
+
+.navbar .logo{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar .logo span{
+    color: var(--primary-color);
+}
+
+
+nav {
+    display: none;
+}
+
+.navbar .container{
+    display: flex;
+    place-content: space-between;
+}
+
+
+.navbar .mobile-menu{
+    width: 30px;
+    cursor: pointer;
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero .left-col .subhead{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .3em;
+}
+
+.hero .left-col h1{
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+.hero .left-col .primary-cta{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero .left-col .secondary-cta{
+    display: block;
+    margin-top: 1em;
+}
+
+.hero .left-col .secondary-cta img{
+    margin-right: .8em;
+    height: 1.5em;
+
+}
+
+.right-col  .hero-img{
+    width: 70%;
+    margin-top: 3em;
+}
+
+section.features-section{
+    background-color: #20272e;
+    color: white;
+}
+
+ul.features-list{
+    margin: 0;
+    padding-left: .1em;
+}
+
+
+ul.features-list li{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative; /* to mmake the child elements positioning related to it */
+
+}
+
+ul.features-list li::before{
+    content: '';
+    position: absolute;
+    left: -2em;
+    width: 20px;
+    height: 20px;
+    background: url('../icon/checkmark.png');
+    background-size: contain;
+    margin-right: .5em;
+}
+
+.features-section img{
+    display: none;
+}
+
+section.testimonial-section{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.testimonial-section li img{
+    width: 5em;
+    border: 5px solid  #006bd6;
+    border-radius: 50%;
+    margin-top: -4em;
+}
+
+.testimonial-section li{
+    background-color: #006bd6;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+}
+
+.contact-section h2{
+    font-size: 2em;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .8em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+input:hover, textarea:hover{
+    border: 1px solid var(--primary-color);
+}
+
+input:active, textarea:active{
+    border: 1px solid var(--primary-color);
+}
+
+input:focus, textarea:active{
+    border: 1px solid var(--primary-color);
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5em;
+    margin-bottom: 5em;
+    cursor: pointer;
+    width: unset;
+    padding: .8em 2em;
+
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+img.mobile-exit{
+    padding: 0;
+    margin: 0;
+}
+
+nav.menu-btn{
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #20272e;
+    width: 60%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav ul.primary-nav{
+    margin-top: 5em;
+}
+
+nav ul li a{
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-align: right;
+    display: block;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+.mobile-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
